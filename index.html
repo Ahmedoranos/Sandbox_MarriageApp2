@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <style>
+      @media only screen and (min-width: 800px) {
+        .info_main_table {
+          display: flex;
+          margin-bottom: 1rem;
+          border: ;
+          margin: 1rem 3rem;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .info_main_table {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1rem;
+          border: blue;
+          margin: 1rem 0rem;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        .info_main_table img {
+          min-width: 250px;
+          min-height: 300px;
+          max-width: 250px;
+          max-height: 300px;
+          border: solid 0.5px lightblue;
+        }
+      }
+
+      @media (min-width: 400px) and (max-width: 800px) {
+        .info_main_table img {
+          min-width: 175px;
+          min-height: 200px;
+          max-width: 175px;
+          max-height: 200px;
+          border: solid 0.5px lightblue;
+          border-radius: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        .info_main_table img {
+          min-width: 90px;
+          min-height: 100px;
+          max-width: 90px;
+          max-height: 100px;
+          border: solid 0.5px lightblue;
+          border-radius: 100%;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        .info_table {
+          border: red;
+          width: 100%;
+          padding: 0 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .info_table {
+          border: red;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        .info_table_general {
+          border: green;
+          padding: 0 0.5rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          background-color: ;
+          border-bottom: solid 0.5px lightgray;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .info_table_general {
+          border: solid 0.5px #e5e7e9;
+          padding: 0.5rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          background-color: #fbfcfc;
+          border-radius: 5px;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        .info_table_general p {
+          font-size: 17px;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .info_table_general p {
+          font-size: 15px;
+          margin: 5px;
+        }
+      }
+
+      .info_main_div {
+        border: ;
+        display: flex;
+        margin: 2rem 0;
+        padding: 0 0;
+      }
+      .level_div {
+        display: flex;
+        flex-direction: row;
+        border: ;
+        width: 100%;
+      }
+
+      .level_div_col {
+        display: flex;
+        flex-grow: 1;
+        width: 0;
+        flex-direction: column;
+        border: ;
+      }
+
+      @media only screen and (min-width: 800px) {
+        .level_div_col p {
+          font-size: 19px;
+          padding: 0.5rem 0rem;
+          margin: 0;
+          color: #5d6d7e;
+        }
+      }
+      @media (min-width: 400px) and (max-width: 800px) {
+        .level_div_col p {
+          font-size: 17px;
+          padding: 0.5rem 0rem;
+          margin: 0;
+          color: #5d6d7e;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .level_div_col p {
+          font-size: 12px;
+          padding: 0.5rem 0rem;
+          margin: 0;
+          color: #5d6d7e;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        .level_div_col h4 {
+        }
+      }
+      @media (min-width: 400px) and (max-width: 800px) {
+        .level_div_col h4 {
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .level_div_col h4 {
+          font-size: 14px;
+        }
+      }
+
+      .gray_row {
+        background-color: #f6f6f6;
+      }
+      .info_table_head {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 19px;
+        color: #2471a3;
+      }
+      @media only screen and (max-width: 800px) {
+        .col1 {
+          display: none;
+        }
+      }
+
+      .giveMargin {
+        margin: 0 0.5rem;
+      }
+
+      .smaller_images {
+        background-color: #e5e7e9;
+        border: solid 0.5px #f2f3f4;
+        width: 75px;
+        height: 75px;
+        margin: 3px 3px;
+        background-image: url("src/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .giveborder {
+        border: ;
+      }
+
+      @media only screen and (min-width: 800px) {
+        .main_image_wrapper {
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .main_image_wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          border: green;
+          margin-bottom: 1rem;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .info_section {
+          margin: 1rem 0rem;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        .info_section {
+          margin: 1rem 3rem;
+        }
+      }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: gray;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <svg
+      style="color: blue; font-size: 2500px;"
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-heart-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+      />
+    </svg>
+
+    <a href="second.html">second</a>
+    <a href="third.html">third</a>
+    <a href="aboutUs.html">aboutUs</a>
+    <a href="404.html">aboutUs</a>
+    <a href="profilesettings.html">settings</a>
+
+    <div class="tooltip">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-patch-question"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z"
+        />
+        <path
+          d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"
+        />
+        <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+      </svg>
+      <span class="tooltiptext">
+        First image is your profile image by default
+      </span>
+    </div>
+
+    <div class="info_main_table giveborder" style="">
+      <div class="main_image_wrapper" style="">
+        <img src="src/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" />
+        <div class="tooltip">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-patch-question"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z"
+            />
+            <path
+              d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"
+            />
+            <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+          </svg>
+          <span class="tooltiptext">
+            First image is your profile image by default
+          </span>
+        </div>
+      </div>
+      <div class="info_table giveborder" style="">
+        <div class="info_table_general giveborder">
+          <p style="margin-top: 0; color: #2471a3; font-size: large;">Ahmed</p>
+          <p style="margin: 0;">28 • Cairo, Egypt</p>
+          <p style="margin: 0;">Male / ID: 24287733</p>
+          <p style="margin: 0;">
+            Seeking Female 19 - 34 living in Egypt
+          </p>
+          <p
+            style="
+              color: green;
+              font-weight: bold;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-size: 17px;
+            "
+          >
+            I'm Online
+          </p>
+        </div>
+
+        <div
+          class="giveborder"
+          style="display: flex; flex-direction: column; margin-top: 0.5rem;"
+        >
+          <div style="display: flex;">
+            <div class="smaller_images"></div>
+            <div class="smaller_images"></div>
+            <div class="smaller_images"></div>
+          </div>
+          <div style="display: flex;">
+            <div class="smaller_images"></div>
+            <div class="smaller_images"></div>
+            <div class="smaller_images"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="giveborder info_section"
+      style="display: flex; flex-direction: column;"
+    >
+      <div
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          display: flex;
+          border: red;
+          align-items: ;
+        "
+      >
+        <span class="giveMargin" style="border: ; height: ; font-weight: 500;">
+          Level 1
+        </span>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="border: ;"
+          width="20"
+          height="22"
+          fill="Green"
+          class="bi bi-check-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+          />
+        </svg>
+      </div>
+
+      <div
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          display: flex;
+          align-items: ;
+        "
+      >
+        <span class="giveMargin" style="border: ; height: ; font-weight: 500;">
+          Level 2
+        </span>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          style="border: ;"
+          width="20"
+          height="22"
+          fill="lightgray"
+          class="bi bi-check-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+          />
+        </svg>
+      </div>
+
+      <div
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          display: flex;
+          border: red;
+          align-items: ;
+        "
+      >
+        <span class="giveMargin" style="border: ; height: ; font-weight: 500;">
+          Level 3
+        </span>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="22"
+          fill="lightgray"
+          class="bi bi-dash-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+          />
+          <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="giveborder info_section" style="">
+      <div class="info_main_div giveborder">
+        <div class="level_div">
+          <div class="level_div_col col1">
+            <h4 class="info_table_head">
+              Level 1
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                fill="currentColor"
+                class="bi bi-pencil-square"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+                />
+              </svg>
+            </h4>
+            <p class="gray_row">Religion</p>
+            <p>Commitment Level</p>
+            <p class="gray_row">Country</p>
+            <p>Social Status</p>
+            <p class="gray_row">Education</p>
+            <p>Ethnicity</p>
+          </div>
+          <div class="level_div_col">
+            <h4 class="info_table_head">Ahmed</h4>
+            <p class="gray_row">Sunni</p>
+            <p>Commitedd</p>
+            <p class="gray_row">Egypt</p>
+            <p>Middle Class</p>
+            <p class="gray_row">Bachelor</p>
+          </div>
+          <div class="level_div_col">
+            <h4 class="info_table_head">Looking for</h4>
+            <p class="gray_row">Sunni</p>
+            <p>Commitedd</p>
+            <p class="gray_row">Egypt</p>
+            <p>Middle Class</p>
+            <p class="gray_row">Bachelor</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info_main_div giveborder">
+        <div class="level_div">
+          <div class="level_div_col col1">
+            <h4 class="info_table_head">
+              Level 2
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                fill="currentColor"
+                class="bi bi-pencil-square"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+                />
+              </svg>
+            </h4>
+            <p class="gray_row">City</p>
+            <p>Height</p>
+            <p class="gray_row">Personality</p>
+            <p>Nationality</p>
+            <p class="gray_row">Age</p>
+            <p>Body Style</p>
+          </div>
+          <div class="level_div_col">
+            <h4 class="info_table_head">Ahmed</h4>
+            <p class="gray_row">Sunni</p>
+            <p>Commitedd</p>
+            <p class="gray_row">Egypt</p>
+            <p>Middle Class</p>
+            <p class="gray_row">Bachelor</p>
+          </div>
+          <div class="level_div_col">
+            <h4 class="info_table_head">Looking for</h4>
+            <p class="gray_row">Sunni</p>
+            <p>Commitedd</p>
+            <p class="gray_row">Egypt</p>
+            <p>Middle Class</p>
+            <p class="gray_row">Bachelor</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info_main_div giveborder">
+        <div class="level_div">
+          <div class="level_div_col col1">
+            <h4 class="info_table_head">
+              Level 3
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                fill="currentColor"
+                class="bi bi-pencil-square"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+                />
+              </svg>
+            </h4>
+            <p class="gray_row">Marital Status</p>
+            <p>Appearance</p>
+            <p class="gray_row">Languages Spoken</p>
+            <p>Annual Income</p>
+            <p class="gray_row">Smoke</p>
+            <p>Occupation</p>
+          </div>
+          <div class="level_div_col">
+            <h4 class="info_table_head">Ahmed</h4>
+            <p class="gray_row">Sunni</p>
+            <p>Commitedd</p>
+            <p class="gray_row">Egypt</p>
+            <p>Middle Class</p>
+            <p class="gray_row">Bachelor</p>
+          </div>
+          <div class="level_div_col">
+            <h4 class="info_table_head">Looking for</h4>
+            <p class="gray_row">Sunni</p>
+            <p>Commitedd</p>
+            <p class="gray_row">Egypt</p>
+            <p>Middle Class</p>
+            <p class="gray_row">Bachelor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
